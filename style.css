@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.header {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.section-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: chartreuse;
+}
+
+.header .section-header ul {
+  display: flex;
+}
+
+.section-header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.section-header nav ul li a:hover {
+  color: #1cb698;
+}
+
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<< INICIO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.inicio {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 48, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(/Imgs/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .contenido-banner {
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+  margin-top: 40px;
+  border: 10px solid #1cb698;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  font-family: "Righteous";
+}
+
+.inicio .contenido-banner h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<< SOBRE MÍ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.sobreMi {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+  height: 100vh;
+}
+
+.sobreMi .contenido-sobreMi {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobreMi h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sobreMi .contenido-sobreMi p {
+  font: 18px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.sobreMi .contenido-sobreMi p span {
+  color: #1cb698;
+  font-weight: bold;
+}
+
+.sobrei .fila {
+  display: flex;
+  align-items: center;
+}
+
+.sobreMI .fila .contenedor-skills {
+  width: 50%;
+}
+
+.download-cv {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.download-cv .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+
+.download-cv:hover .overlay {
+  width: 100%;
+}
+
+.fila h3 {
+  margin-top: 50px;
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.fila .contenedor-skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.fila .contenedor-skills .skills {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.fila .contenedor-skills .skills i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.fila .contenedor-skills .skills:hover {
+  background-color: #1cb698;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  PROYECTOS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.proyectos {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.proyectos .contenido-proyectos {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.proyectos h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.proyectos .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.proyectos .galeria .proyecto {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.proyectos .galeria .proyecto img {
+  width: 100%;
+  display: block;
+}
+
+.proyectos .galeria .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, 0.8) rgba(28, 182, 152, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.proyectos .galeria .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  color: #1cb698;
+}
+
+.proyectos .galeria .proyecto .overlay:hover {
+  opacity: 5;
+}
+
+.proyectos .galeria .proyecto .overlay:hover h3 {
+  margin-bottom: 0px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  CONTACTO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.contacto {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.contacto .contenido-contacto {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contacto h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contacto .fila {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto .col {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 18px;
+  resize: none;
+}
+
+.contacto button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.contacto button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+
+.contacto button:hover .overlay {
+  width: 100%;
+}
+
+.iconos-contactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.iconos-contactos li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.iconos-contactos a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.iconos-contactos i {
+  font-size: 50px;
+}
+
+.iconos-contactos a:hover {
+  color: rgba(201, 197, 197, 0.549);
+
+  animation: circulo 1s forwards;
+}
+
+@keyframes circulo {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: scale(1.2); /* Tamaño aumentado */
+  }
+  100% {
+    transform: scale(1.2); /* Volver al tamaño normal */
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+footer {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RESPONSIVE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+  }
+
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sobreMi {
+    height: 100%;
+  }
+  .sobreMi .contenido-sobreMi p {
+    line-height: 25px;
+  }
+  .sobreMi .fila {
+    display: block;
+  }
+
+  .sobreMi .fila .contenedor-skills {
+    width: fit-content;
+  }
+
+  .fila .skills {
+    display: block;
+  }
+  .contenedor-skills {
+    width: 100%;
+  }
+
+  .contacto .col input,
+  .contacto .col textarea {
+    font-size: 20px;
+    text-align: center;
+  }
+}

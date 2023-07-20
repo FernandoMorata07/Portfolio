@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio Fernando Morata Sánchez</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/porfolio.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <section class="section-header">
+        <h2 class="logo">
+          <a href="#">Fernando</a>
+        </h2>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="inicio" class="inicio">
+        <article class="contenido-banner">
+          <div class="contenedor-img">
+            <img src="/Imgs/nando.jpeg" alt="" />
+          </div>
+          <h1>Fernando Morata Sánchez</h1>
+          <h2>Full Stack Web Developer Junior</h2>
+        </article>
+      </section>
+
+      <section id="sobreMi" class="sobreMi">
+        <article class="contenido-sobreMi">
+          <h2>Sobre Mí</h2>
+          <p>
+            <span>Hola , soy Fernando </span> Siempre he sido una persona
+            abierta a los cambios y dispuesta a progresar. Hace un tiempo,
+            decidí que quería crecer en el ámbito profesional y me adentré en un
+            mundo que siempre me llamó la atención, la programación. El método
+            de aprendizaje de Hack a boss, junto a mi capacidad de compromiso,
+            constancia y trabajo en equipo, hacen posible que en la actualidad,
+            esté preparado para ejercer de desarrollador web en la empresa que
+            me brinde la oportunidad
+          </p>
+          <button class="download-cv">
+            DESCARGAR CV <i class="fa-sharp fa-solid fa-circle-down"></i>
+            <span class="overlay"></span>
+          </button>
+          <section class="fila">
+            <h3>SKILLS & TECHNOLOGY</h3>
+            <ul class="contenedor-skills">
+              <li class="skills">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </li>
+              <li class="skills">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </li>
+              <li class="skills">
+                <i class="fa-brands fa-square-js"></i>
+                <span>JavaScript</span>
+              </li>
+              <li class="skills">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL</span>
+              </li>
+              <li class="skills">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node JS</span>
+              </li>
+              <li class="skills">
+                <i class="fab fa-react"></i>
+                <span>React JS</span>
+              </li>
+              <li class="skills">
+                <i class="fa-brands fa-github"></i>
+                <span>GIT</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+      <section id="proyectos" class="proyectos">
+        <article class="contenido-proyectos">
+          <h2>PROYECTOS</h2>
+          <section class="galeria">
+            <article class="proyecto">
+              <img src="/Imgs/api-tiempo.jpg" alt="proyecto1" />
+              <div class="overlay">
+                <h3>Api de Tiempo</h3>
+                <p>JavaScript</p>
+              </div>
+            </article>
+
+            <article class="proyecto">
+              <img src="/Imgs/servidor node.png" alt="proyecto2" />
+              <div class="overlay">
+                <h3>servidor Node</h3>
+                <p>SQL, Node</p>
+              </div>
+            </article>
+
+            <article class="proyecto">
+              <img src="/Imgs/social link.png" alt="proyecto3" />
+              <div class="overlay">
+                <h3>Red Social</h3>
+                <p>React & Node</p>
+              </div>
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <section id="contacto" class="contacto">
+        <article class="contenido-contacto">
+          <h2>CONTACTO</h2>
+          <div class="fila">
+            <form
+              action="https://formspree.io/f/xqkvabrp"
+              method="POST"
+              class="col"
+            >
+              <input type="text" name="name" placeholder="Nombre" required />
+
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Número de teléfono"
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
+
+              <textarea
+                name="mensaje"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+
+              <button type="submit" target="_blank">
+                Enviar <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+            <section class="col">
+              <ul class="iconos-contactos">
+                <li>
+                  <a
+                    href="mailto:fernando-5-vva@hotmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="far fa-envelope"></i>
+                    <p>Email</p></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/fernando-morata-sanchez/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                    <p>Linkedin</p></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/FernandoMorata07"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i>
+                    <p>Github</p></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./archv/Cv - Fernando Morata Sánchez.pdf"
+                    download="Fernando Morata Sánchez CV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-file-download"></i>
+                    <p>CV</p></a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Portfolio - <span>Fernando Morata Sánchez</span>Copyright © 2023 All
+        Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
