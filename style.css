@@ -597,5 +597,7 @@ footer p span {
   .contacto .col input,
   .contacto .col textarea {
     font-size: 8.5px;
+    background-color: #3b3e41;
+    border-radius: 10px;
   }
 }
