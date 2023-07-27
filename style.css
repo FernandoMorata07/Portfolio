@@ -594,4 +594,8 @@ footer p span {
   .iconos-contactos i {
     font-size: 30px;
   }
+  .contacto .col input,
+  .contacto .col textarea {
+    font-size: 8.5px;
+  }
 }
