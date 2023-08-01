@@ -83,7 +83,7 @@ function verificarEnlace(event) {
   const enlace = event.currentTarget.querySelector("a");
 
   if (!enlace.getAttribute("href")) {
-    alert("Este proyecto aún ha sido desplegado (deployed)");
+    alert("Este proyecto aún no ha sido desplegado (deployed)");
   } else {
     window.location.href = enlace.getAttribute("href");
   }
