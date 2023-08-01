@@ -594,10 +594,29 @@ footer p span {
   .iconos-contactos i {
     font-size: 30px;
   }
+
+  .contacto .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .contacto .col input,
   .contacto .col textarea {
-    font-size: 8.5px;
+    font-size: 15px;
     background-color: #3b3e41;
     border-radius: 10px;
+  }
+
+  .contacto .col input {
+    width: 280px;
+    height: 45px;
+  }
+
+  .contacto .col textarea {
+    width: 280px;
+    height: 200px;
   }
 }
