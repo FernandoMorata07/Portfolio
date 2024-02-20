@@ -92,3 +92,18 @@ function verificarEnlace(event) {
 webGitItems.forEach((webGitItem) => {
   webGitItem.addEventListener("click", verificarEnlace);
 });
+
+("use strict");
+
+// Función para obtener y actualizar el contador de visitas
+function updateViewCounter() {
+  let views = localStorage.getItem("views");
+  views = views ? parseInt(views) + 1 : 1;
+  localStorage.setItem("views", views);
+  document.getElementById("view-counter").textContent = views;
+}
+
+// Incrementa el contador de visitas cada vez que la página se carga
+window.addEventListener("load", function () {
+  updateViewCounter();
+});
